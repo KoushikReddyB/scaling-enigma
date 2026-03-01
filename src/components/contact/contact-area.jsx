@@ -35,10 +35,10 @@ const ContactArea = () => {
                     </div>
                     <div className="tp-contact-info-content">
                       <p data-info="mail">
-                        <a href="mailto:contact@shofy.com">contact@shofy.com</a>
+                        <a href="mailto:kindnglow9@gmail.com">kindnglow9@gmail.com</a>
                       </p>
                       <p data-info="phone">
-                        <a href="tel:670-413-90-762">+670 413 90 762</a>
+                        <a href="tel:91-83329-48310">+91 83329 48310</a>
                       </p>
                     </div>
                   </div>
@@ -51,10 +51,10 @@ const ContactArea = () => {
                     <div className="tp-contact-info-content">
                       <p>
                         <a
-                          href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.1197638,11z/data=!3m1!4b1!4m6!3m5!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728!16zL20vMDJfMjg2"
+                          href="https://www.google.com/maps/place/Poranki,+Vijayawada,+Andhra+Pradesh/@16.4797932,80.6938383,3578m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3a35fb6d490132f7:0x7ed35c62a6cf132a!8m2!3d16.4761687!4d80.7068792!16s%2Fg%2F11bc61tgw5?entry=ttu&g_ep=EgoyMDI2MDIyNS4wIKXMDSoASAFQAw%3D%3D"
                           target="_blank"
                         >
-                          84 sleepy hollow st. <br /> jamaica, New York 1432
+                          Poranki, Vijayawada <br /> Andhra Pradesh, India 521137
                         </a>
                       </p>
                     </div>
@@ -66,22 +66,18 @@ const ContactArea = () => {
                       </span>
                     </div>
                     <div className="tp-contact-info-content">
-                      <div className="tp-contact-social-wrapper mt-5">
                         <h4 className="tp-contact-social-title">
                           Find on social media
                         </h4>
 
-                        <div className="tp-contact-social-icon">
-                          <a href="#">
-                            <i className="fa-brands fa-facebook-f"></i>
-                          </a>
-                          <a href="#">
-                            <i className="fa-brands fa-twitter"></i>
-                          </a>
-                          <a href="#">
-                            <i className="fa-brands fa-linkedin-in"></i>
-                          </a>
-                        </div>
+                        <div className="tp-contact-info-content">
+                          <p>
+                        <a
+                          href="https://www.instagram.com/kind_n_glow"
+                          target="_blank"
+                        >@kind_n_glow
+                        </a>
+                      </p>
                       </div>
                     </div>
                   </div>
