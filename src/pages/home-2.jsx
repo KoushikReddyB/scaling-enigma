@@ -10,7 +10,6 @@ import WeeksFeatured from '@/components/products/fashion/weeks-featured';
 import TrendingProducts from '@/components/products/fashion/trending-products';
 import BestSellerProducts from '@/components/products/fashion/best-seller-products';
 import FashionTestimonial from '@/components/testimonial/fashion-testimonial';
-import BlogArea from '@/components/blog/fashion/blog-area';
 import FeatureAreaTwo from '@/components/features/feature-area-2';
 import InstagramAreaTwo from '@/components/instagram/instagram-area-2';
 import Footer from '@/layout/footers/footer';
@@ -28,7 +27,6 @@ const HomeTwo = () => {
       <TrendingProducts/>
       <BestSellerProducts/>
       <FashionTestimonial/>
-      <BlogArea/>
       <FeatureAreaTwo/>
       <InstagramAreaTwo/>
       <Footer style_2={true} />
