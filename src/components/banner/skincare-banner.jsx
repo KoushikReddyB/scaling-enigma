@@ -48,7 +48,7 @@ const slider_setting = {
   },
 }
 
-const FashionBanner = () => {
+const SkinCareBanner = () => {
   return (
     <>
       <section className="tp-slider-area p-relative z-index-1">
@@ -94,4 +94,4 @@ const FashionBanner = () => {
   );
 };
 
-export default FashionBanner;
+export default SkinCareBanner;

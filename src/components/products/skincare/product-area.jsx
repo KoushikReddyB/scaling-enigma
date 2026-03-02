@@ -11,7 +11,7 @@ const tabs = ["All Collection", "Shoes", "Clothing", "Bags"];
 const ProductArea = () => {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const { data: products, isError, isLoading } =
-    useGetProductTypeQuery({ type: 'fashion' });
+    useGetProductTypeQuery({ type: 'skincare' });
   // handleActiveTab
   const handleActiveTab = (tab) => {
     setActiveTab(tab);

@@ -6,12 +6,12 @@ import { ArrowRightLong } from "@/svg";
 import { HomeTwoCateLoader } from "../loader";
 import { useGetProductTypeCategoryQuery } from "@/redux/features/categoryApi";
 
-const FashionCategory = () => {
+const SkinCareCategory = () => {
   const {
     data: categories,
     isLoading,
     isError,
-  } = useGetProductTypeCategoryQuery("fashion");
+  } = useGetProductTypeCategoryQuery("skincare");
   const router = useRouter()
 
   // handle category route
@@ -76,4 +76,4 @@ const FashionCategory = () => {
   );
 };
 
-export default FashionCategory;
+export default SkinCareCategory;

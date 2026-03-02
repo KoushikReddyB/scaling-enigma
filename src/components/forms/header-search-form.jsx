@@ -28,7 +28,7 @@ const HeaderSearchForm = () => {
             options={[
               { value: "Select Category", text: "Select Category" },
               { value: "electronics", text: "electronics" },
-              { value: "fashion", text: "fashion" },
+              { value: "skincare", text: "skincare" },
               { value: "beauty", text: "beauty" },
               { value: "jewelry", text: "jewelry" },
             ]}

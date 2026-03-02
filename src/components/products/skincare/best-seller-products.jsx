@@ -9,7 +9,7 @@ import { HomeTwoBestSellPrdPrdLoader } from '@/components/loader';
 
 const BestSellerProducts = () => {
   const { data: products, isError, isLoading } =
-    useGetProductTypeQuery({ type: 'fashion', query: `topSellers=true` });
+    useGetProductTypeQuery({ type: 'skincare', query: `topSellers=true` });
   // decide what to render
   let content = null;
 

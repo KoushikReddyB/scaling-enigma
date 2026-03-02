@@ -45,7 +45,7 @@ const slider_setting = {
 };
 
 const PopularProducts = () => {
-  const {data: products,isError,isLoading} = useGetPopularProductByTypeQuery("fashion");
+  const {data: products,isError,isLoading} = useGetPopularProductByTypeQuery("skincare");
   const { cart_products } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
