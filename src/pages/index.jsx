@@ -1,6 +1,6 @@
 import React from 'react';
 import SEO from '@/components/seo';
-import HeaderTwo from '@/layout/headers/header-2';
+import Header from '@/layout/headers/header';
 import Wrapper from '@/layout/wrapper';
 import FashionBanner from '@/components/banner/fashion-banner';
 import FashionCategory from '@/components/categories/fashion-category';
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Wrapper>
       <SEO pageTitle="Home" />
-      <HeaderTwo/>
+      <Header/>
       <FashionBanner/>
       <FashionCategory/>
       <PopularProducts/>
