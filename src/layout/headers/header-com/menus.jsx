@@ -4,12 +4,12 @@ import Link from "next/link";
 import { useGetProductTypeQuery } from "@/redux/features/productApi";
 import { HomeNewArrivalPrdLoader } from "@/components/loader";
 import ErrorMsg from "@/components/common/error-msg";
-import ProductItem from "@/components/products/electronics/product-item";
+import ProductItem from "@/components/products/skincare/product-item";
 
 const Menus = () => {
   const { data: products, isError, isLoading } =
     useGetProductTypeQuery({
-      type: "electronics",
+      type: "skincare",
       query: "new=true",
     });
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { mobile_menu } from "@/data/menu-data";
+import ProductItem from "../products/skincare/product-item";
 import ErrorMsg from "./error-msg";
 import { HomeNewArrivalPrdLoader } from "../loader";
 import { useGetProductTypeQuery } from "@/redux/features/productApi";
@@ -10,7 +11,7 @@ const MobileMenus = () => {
 
   const { data: products, isError, isLoading } =
     useGetProductTypeQuery({
-      type: "electronics",
+      type: "skincare",
       query: "new=true",
     });
 
