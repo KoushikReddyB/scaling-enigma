@@ -60,13 +60,10 @@ const menu_data = [
   },
   {
     id: 3,
-    sub_menu: true,
+    sub_menu: false,
     title: 'Shop',
     link: '/shop',
     sub_menus: [
-      { title: 'Shop', link: '/shop' },
-      { title: 'Right Sidebar', link: '/shop-right-sidebar' },
-      { title: 'Hidden Sidebar', link: '/shop-hidden-sidebar' },
     ],
   },
   {
