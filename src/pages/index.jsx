@@ -1,34 +1,35 @@
-import SEO from "@/components/seo";
-import Wrapper from "@/layout/wrapper";
-import HeaderThree from '@/layout/headers/header-3';
-import BeautyBanner from '@/components/banner/beauty-banner';
-import BeautyCategory from '@/components/categories/beauty-category';
-import BeautyFeatured from '@/components/features/beauty-featured';
-import ProductArea from '@/components/products/beauty/product-area';
-import BeautyOfferBanner from '@/components/offer-banner/beauty-offer-banner';
-import ProductAreaTwo from '@/components/products/beauty/product-area-2';
-import TrendingSpecialPrd from '@/components/products/beauty/trending-special-prd';
-import BeautyTestimonial from '@/components/testimonial/beauty-testimonial';
+import React from 'react';
+import SEO from '@/components/seo';
+import HeaderTwo from '@/layout/headers/header-2';
+import Wrapper from '@/layout/wrapper';
+import FashionBanner from '@/components/banner/fashion-banner';
+import FashionCategory from '@/components/categories/fashion-category';
+import PopularProducts from '@/components/products/fashion/popular-products';
+import ProductArea from '@/components/products/fashion/product-area';
+import WeeksFeatured from '@/components/products/fashion/weeks-featured';
+import TrendingProducts from '@/components/products/fashion/trending-products';
+import BestSellerProducts from '@/components/products/fashion/best-seller-products';
+import FashionTestimonial from '@/components/testimonial/fashion-testimonial';
 import FeatureAreaTwo from '@/components/features/feature-area-2';
-import InstagramAreaThree from '@/components/instagram/instagram-area-3';
+import InstagramAreaTwo from '@/components/instagram/instagram-area-2';
 import Footer from '@/layout/footers/footer';
 
 export default function Home() {
   return (
     <Wrapper>
-      <SEO pageTitle='Home'/>
-      <HeaderThree/>
-      <BeautyBanner/>
-      <BeautyCategory/>
-      <BeautyFeatured/>
+      <SEO pageTitle="Home" />
+      <HeaderTwo/>
+      <FashionBanner/>
+      <FashionCategory/>
+      <PopularProducts/>
       <ProductArea/>
-      <BeautyOfferBanner/>
-      <ProductAreaTwo/>
-      <TrendingSpecialPrd/>
-      <BeautyTestimonial/>
+      <WeeksFeatured/>
+      <TrendingProducts/>
+      <BestSellerProducts/>
+      <FashionTestimonial/>
       <FeatureAreaTwo/>
-      <InstagramAreaThree/>
-      <Footer style_3={true} />
+      <InstagramAreaTwo/>
+      <Footer style_2={true} />
     </Wrapper>
   )
 }
