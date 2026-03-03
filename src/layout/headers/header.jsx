@@ -15,7 +15,7 @@ import OffCanvas from '@/components/common/off-canvas';
 
 const Header = ({ style_2 = false }) => {
   const { wishlist } = useSelector((state) => state.wishlist);
-  const { user } = useSelector((state) => state.auth); 
+  const { user } = useSelector((state) => state.auth); // FIX: Defined user
   const [isOffCanvasOpen, setIsCanvasOpen] = useState(false);
   const { setSearchText, handleSubmit, searchText } = useSearchFormSubmit();
   const { quantity } = useCartInfo();
@@ -37,6 +37,7 @@ const Header = ({ style_2 = false }) => {
                   <div className="col-xl-2 col-lg-5 col-md-5 col-sm-4 col-6">
                     <div className="logo">
                       <Link href="/">
+                        {/* FIX: Added width and height */}
                         <Image src={logo} alt="logo" width={110} height={35} priority />
                       </Link>
                     </div>
@@ -57,43 +58,30 @@ const Header = ({ style_2 = false }) => {
                             value={searchText}
                             type="text"
                             placeholder="Search for Products..." />
-                          <button type="submit">
-                            <Search />
-                          </button>
+                          <button type="submit"><Search /></button>
                         </form>
                       </div>
                       <div className="tp-header-action d-flex align-items-center ml-30">
-                        {/* Compare */}
                         <div className="tp-header-action-item d-none d-lg-block">
-                          <Link href="/compare" className="tp-header-action-btn">
-                            <Compare />
-                          </Link>
+                          <Link href="/compare" className="tp-header-action-btn"><Compare /></Link>
                         </div>
-
-                        {/* Wishlist */}
                         <div className="tp-header-action-item d-none d-lg-block">
                           <Link href="/wishlist" className="tp-header-action-btn">
                             <Wishlist />
                             <span className="tp-header-action-badge">{wishlist.length}</span>
                           </Link>
                         </div>
-
-                        {/* Cart */}
                         <div className="tp-header-action-item">
                           <button onClick={() => dispatch(openCartMini())} className="tp-header-action-btn cartmini-open-btn" >
                             <CartTwo />
                             <span className="tp-header-action-badge">{quantity}</span>
                           </button>
                         </div>
-
-                        {/* User Account / Profile */}
                         <div className="tp-header-action-item d-none d-lg-block">
                           <Link href={user ? "/profile" : "/login"} className="tp-header-action-btn">
                             <User />
                           </Link>
                         </div>
-
-                        {/* Mobile Menu Burger */}
                         <div className="tp-header-action-item tp-header-hamburger mr-20 d-xl-none">
                           <button onClick={() => setIsCanvasOpen(true)} type="button" className="tp-offcanvas-open-btn">
                             <Menu />
